@@ -1,0 +1,217 @@
+<div class="w-full h-full flex justify-center items-center">
+  <h1 id="type" class="text-4xl font-bold"></h1>
+</div>
+
+<script>
+  const words = [
+    "As-salamu alaykum!",
+    "Welcome to my website!",
+    "I am Waliur Rafiq SAMI",
+  ];
+  let i = 0;
+  let j = 0;
+  let currentWord = "";
+  let isDeleting = false;
+
+  function type() {
+    currentWord = words[i];
+    if (isDeleting) {
+      document.getElementById("type").textContent = currentWord.substring(
+        0,
+        j - 1
+      );
+      j--;
+      if (j == 0) {
+        isDeleting = false;
+        i++;
+        if (i == words.length) {
+          i = 0;
+        }
+      }
+    } else {
+      document.getElementById("typewriter").textContent = currentWord.substring(
+        0,
+        j + 1
+      );
+      j++;
+      if (j == currentWord.length) {
+        isDeleting = true;
+      }
+    }
+    setTimeout(type, 100);
+  }
+
+  type();
+</script>
+<!-- //========================= -->
+<section id="AI_Universe_Hub" class="container mx-auto my-20">
+  <h1 class="text-center font-bold text-3xl mb-10">AI Universe Hub</h1>
+  <!-- Hub container  -->
+  <div id="AI_Universe_Hub_Container">
+    <div
+      class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 border-2 p-5 rounded-2xl"
+    >
+      <!-- card -- 1  -->
+      <div
+        class="card bg-gray-100 shadow-xl p-5 border-2 rounded-2xl border-gray-200"
+      >
+        <figure>
+          <img
+            src="https://img.olhardigital.com.br/wp-content/uploads/2023/01/chatgpt_assistente.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="mt-5 border-b-2 pb-5 border-gray-300">
+          <h2 class="font-bold text-2xl pb-3">Features :</h2>
+          <ol class="list-decimal pl-7 text-lg">
+            <li>Natural language processing</li>
+            <li>Contextual understanding</li>
+            <li>Text generation</li>
+          </ol>
+        </div>
+        <div class="card-actions justify-between items-center py-5">
+          <div>
+            <h1 class="font-bold text-2xl mb-2">ChatGPT</h1>
+            <p>
+              <i class="fa-solid fa-calendar-days pr-1 text-lg"></i>
+              11/01/2022
+            </p>
+          </div>
+          <div>
+            <button class="btn bg-red-200 rounded-full text-red-600 text-base">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- card -- 1  -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
