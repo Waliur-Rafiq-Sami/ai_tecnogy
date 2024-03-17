@@ -122,7 +122,7 @@ function getInfoDitals(data, id) {
                 </button>
               </form>
               <!-- container  -->
-              <div class="flex gap-5 flex-col lg:flex-row">
+              <div class="flex gap-5 flex-col-reverse lg:flex-row">
                 <!-- side 1 -->
                 <div
                   class="flex-1 border-2 rounded-3xl p-5 bg-[#ffe9e99d] border-red-300 flex flex-col gap-5"
